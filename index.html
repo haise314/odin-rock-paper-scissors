@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <h3>Welcome to Rock, Paper, Scissors</h3>
     <p>You will be playing against a computer. First one to 5 points wins.</p>
     
     <div id="scoreboard">
-        <h3>Scoreboard</h3>
-        <h3 id="round-number">Round: </h3>
+        <h3>Round: <strong id="round-count">0</strong> </h3>
         <div id="players-scoreboard">
             <p>Computer: <strong id="computer-score">0</strong></p>
             <p>Player: <strong id="human-score">0</strong></p>
@@ -24,21 +22,21 @@
     <div class="playing-field">
         <div class="computer-container">
             <h3>Computer</h3>
-            <p id="computer-action">Thinking...</p>
+            <p class="computer-action">Waiting...</p>
             <p class="computer-result"></p>
         </div>
         
         <div class="human-container">
             <h3>You</h3>
-            <p class="human-action">Click one below</p>
+            <p class="human-action">Waiting...</p>
             <p class="human-result"></p>
         </div>
     </div>
 
     <div id="button-container">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button class="human-input" id="rock">Rock</button>
+        <button class="human-input" id="paper">Paper</button>
+        <button class="human-input" id="scissors">Scissors</button>
     </div>
 </body>
 </html>
